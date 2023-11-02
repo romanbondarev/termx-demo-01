@@ -1,0 +1,23 @@
+name: Static Site Generation
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build the Jekyll site
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/__source:/__source -v ${{ github.workspace }}/_site:/template/_site  \
+          docker.kodality.com/termx-jekyll-builder /bin/bash -c "chmod -R 777 ./_generate.sh && ./_generate.sh"
+
+      - name: Upload _site
+        uses: actions/upload-artifact@v3
+        with:
+          name: _site
+          path: _site/**
