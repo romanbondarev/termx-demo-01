@@ -1,6 +1,18 @@
  - [Roadmap *See planned features / improvements for future releases.*](page:roadmap)
  {.links-list}
 
+# 2.3 SNOMED authoring, synchronization with external servers
+> Released on **November 3d, 2023**
+{.is-info}
+- The SNOMED release management was redone. Support for Snowstorm daily builds workflow. Upgrade to Snowstorm 8.3.
+- Integration with SNOMED [browser](https://github.com/IHTSDO/sct-browser-frontend).
+- New component for preview FHIR API
+- Improved synchronization of terminology with external FHIR terminology servers
+- Support of HTTP headers and OAuth flow for an external server component
+- FHIR $comparator operator for the code system.
+- Improvements in FML Editor.
+- Health check and info endpoints.
+
 # 2.2 Guest access, FML Editor and import enhancements
 > Released on **October 6th, 2023**
 {.is-info}
