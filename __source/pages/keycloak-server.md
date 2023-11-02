@@ -1,0 +1,3 @@
+The terminology server requires authenticated users. Any authentication server supporting OpenId Connect should suffice. For our development, we are using [Keycloak](https://www.keycloak.org/). Check official [docs](https://www.keycloak.org/guides#getting-started) for setup. Check the [example](/terminology-server/guide/authentication#keycloak) of the configuration.
+
+Installing via Helm chart is also possible. Consider using [Bitnami chart](https://github.com/bitnami/charts/tree/master/bitnami/keycloak).
