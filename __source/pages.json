@@ -435,7 +435,7 @@
       "slug" : "static-site-generation",
       "lang" : "en",
       "contentType" : "markdown",
-      "modifiedAt" : "2023-11-02T12:05:17.194759Z"
+      "modifiedAt" : "2023-11-04T16:58:38.047478Z"
     } ]
   } ]
 }, {
@@ -491,7 +491,7 @@
       "slug" : "releases",
       "lang" : "en",
       "contentType" : "markdown",
-      "modifiedAt" : "2023-11-02T09:52:01.005877Z"
+      "modifiedAt" : "2023-11-03T14:51:18.514347Z"
     } ]
   } ]
 }, {
@@ -520,6 +520,15 @@
       "lang" : "en",
       "contentType" : "markdown",
       "modifiedAt" : "2023-10-25T12:28:20.49456Z"
+    } ]
+  }, {
+    "code" : "616fc6b2-24a9-4f67-b813-cd6e6a542e08",
+    "contents" : [ {
+      "name" : "Developer Quickstart",
+      "slug" : "developer-quickstart",
+      "lang" : "en",
+      "contentType" : "markdown",
+      "modifiedAt" : "2023-11-04T15:57:52.963651Z"
     } ]
   }, {
     "code" : "62eb8440-1353-41cc-86c3-759d80b15ab5",

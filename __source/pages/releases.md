@@ -1,5 +1,3 @@
-# Releases
-
 ## Service
 List of released versions: https://gitlab.com/kodality/terminology/termx-server/-/tags
 ### Repository
