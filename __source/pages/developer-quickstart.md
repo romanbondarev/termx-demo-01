@@ -140,7 +140,7 @@ Check the status of installation process
 docker ps && docker logs -f termx-server
 ```
 
-First startup may take up to 5 minutes. Wait until text `Startup completed in NNNNms. Server Running: http://XXXXX:8200` appears. 
+First startup may take up to 1 minute. Wait until text `Startup completed in NNNNms. Server Running: http://XXXXX:8200` appears. 
 
 Web application should be available on http://localhost:4200
 
