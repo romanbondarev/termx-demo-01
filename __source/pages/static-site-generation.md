@@ -10,11 +10,11 @@
 
 If you haven't set up a GitHub workflow before, follow the steps below to create it.
 
-#### Navigate to GitHub Actions
+Navigate to GitHub Actions
 
 ![](files/166/2023-11-02_13-52.png){width=800 .m-raised}
 
-#### Configure workflow
+Configure workflow
 
 +++ View *.github/workflows/jekyll-docker.yml* configuration file
 ```yaml

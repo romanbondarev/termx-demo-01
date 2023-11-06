@@ -1,5 +1,7 @@
 ## Dev Quickstart using docker-compose
-WARNING: this guide is intended for local quickstart and not suited for production environments
+WARNING: this guide is intended for local quickstart and not suited for production environments.
+
+Create folder (for example `termx`) and move to this folder.
 
 ### 1. create postgres init file
 pginit.sql
@@ -54,6 +56,7 @@ services:
       - BOB_MINIO_ACCESS_KEY=bob
       - BOB_MINIO_SECRET_KEY=bobobobo
       - SNOWSTORM_URL=https://snowstorm-public.kodality.dev/
+      - SNOWSTORM_BRANCH=MAIN/SNOMEDCT-EE
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://termx-server:8200/health" ]
       interval: 1s
@@ -96,7 +99,7 @@ services:
     restart: no
     image: quay.io/minio/mc
     entrypoint: /bin/sh
-    command: -c "mc config host add minio http://termx-minio:9000 minio miniominio && mc admin user add minio bob bobobobo && mc admin policy attach minio readwrite --user bob"
+    command: -c "mc config host add minio http://172.17.0.1:9100 minio miniominio && (mc admin user info minio bob || (mc admin user add minio bob bobobobo && mc admin policy attach minio readwrite --user bob))"
     depends_on:
       - termx-minio
 
@@ -125,21 +128,37 @@ services:
 ```
 
 ### 3. Run it!
+
+
+Install and run binaries
 ```
-docker-compose pull && docker-compose up -d &
+docker-compose pull && docker-compose up -d
 ```
-First startup may take up to 5 minutes
+
+Check the status of installation process
+```
+docker ps && docker logs -f termx-server
+```
+
+First startup may take up to 5 minutes. Wait until text `Startup completed in NNNNms. Server Running: http://XXXXX:8200` appears. 
 
 Web application should be available on http://localhost:4200
 
 ### 4. Update it later (if needed)
-Use previous script for update containers also.
+
+Move to the folder with `docker-compose.yml` (in our example `termx`).
+Get updates and restart updated containers.
+
 ```
-docker-compose pull && docker-compose restart &
+docker-compose pull && docker-compose up -d
 ```
 
+### 5. Stopping containers
 
-
+Move to the folder with `docker-compose.yml` (in our example `termx`).
+```
+docker-compose stop
+```
 
 
 

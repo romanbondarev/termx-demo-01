@@ -1,17 +1,7 @@
 {
-  "id" : 8211114,
+  "web" : "https://termx.kodality.dev",
   "code" : "termx-tutorial",
   "names" : {
     "en" : "TermX tutorial"
-  },
-  "active" : true,
-  "shared" : false,
-  "integration" : {
-    "github" : {
-      "repo" : "romanbondarev/termx-demo-01",
-      "dirs" : {
-        "wiki-ssg" : "__source"
-      }
-    }
   }
 }
