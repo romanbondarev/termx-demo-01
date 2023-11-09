@@ -79,6 +79,10 @@ services:
       - PLANT_UML_URL=http://localhost:8501
       - OAUTH_ISSUER=dummy
       - OAUTH_CLIENT_ID=dummy
+      - DEFAULT_LANGUAGE=fr
+      - UI_LANGUAGES='["en", "fr"]'
+      - CONTENT_LANGUAGES='["en", "fr", "pl"]'
+      - EXTRA_LANGUAGES='{"pl": {"en":"Polish", "fr": "Polonais"}}'
     ports:
       - 4200:80
 

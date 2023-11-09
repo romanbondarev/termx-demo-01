@@ -418,6 +418,16 @@
       "lang" : "en",
       "contentType" : "markdown",
       "modifiedAt" : "2023-10-16T07:42:10.369308Z"
+    } ],
+    "children" : [ {
+      "code" : "d397f72c-c8f1-4fe8-8ebf-9516332543ea",
+      "contents" : [ {
+        "name" : "Github application",
+        "slug" : "github-application",
+        "lang" : "en",
+        "contentType" : "markdown",
+        "modifiedAt" : "2023-11-06T18:15:01.527079Z"
+      } ]
     } ]
   }, {
     "code" : "250067aa-8b75-4550-afde-f2da05580682",
@@ -528,7 +538,7 @@
       "slug" : "developer-quickstart",
       "lang" : "en",
       "contentType" : "markdown",
-      "modifiedAt" : "2023-11-06T13:04:46.566034Z"
+      "modifiedAt" : "2023-11-08T14:50:35.153547Z"
     } ]
   }, {
     "code" : "62eb8440-1353-41cc-86c3-759d80b15ab5",
@@ -592,6 +602,15 @@
         "lang" : "en",
         "contentType" : "markdown",
         "modifiedAt" : "2023-07-28T11:52:39.014565Z"
+      } ]
+    }, {
+      "code" : "fa47516f-8775-45a8-bb98-a0cc8bf7922c",
+      "contents" : [ {
+        "name" : "UI Translations",
+        "slug" : "ui-translations",
+        "lang" : "en",
+        "contentType" : "markdown",
+        "modifiedAt" : "2023-11-09T07:23:55.628707Z"
       } ]
     } ]
   }, {
